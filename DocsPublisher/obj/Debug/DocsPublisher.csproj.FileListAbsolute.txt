@@ -1,0 +1,15 @@
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\bin\Debug\DocsPublisher.exe.config
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\bin\Debug\DocsPublisher.exe
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\bin\Debug\DocsPublisher.pdb
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\obj\Debug\DocsPublisher.csprojResolveAssemblyReference.cache
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\obj\Debug\UIViewer\MainWindow.g.cs
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\obj\Debug\App.g.cs
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\obj\Debug\DocsPublisher_MarkupCompile.cache
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\obj\Debug\DocsPublisher_MarkupCompile.lref
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\obj\Debug\UIViewer\MainWindow.baml
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\obj\Debug\DocsPublisher.g.resources
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\obj\Debug\DocsPublisher.Properties.Resources.resources
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\obj\Debug\DocsPublisher.csproj.GenerateResource.Cache
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\obj\Debug\DocsPublisher.csproj.CoreCompileInputs.cache
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\obj\Debug\DocsPublisher.exe
+C:\Users\s049902\Documents\Visual Studio 2017\Projects\DocsPublisher\DocsPublisher\obj\Debug\DocsPublisher.pdb
