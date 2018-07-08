@@ -11,6 +11,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using System.Xml;
 using System.Xml.Linq;
@@ -18,9 +19,15 @@ using System.Xml.Xsl;
 
 namespace DocsPublisher.Program.Core
 {
-    class MainCore : INotifyPropertyChanged, ICommand
+    class MainCore : INotifyPropertyChanged, INotifyDataErrorInfo, ICommand
     {
         public event PropertyChangedEventHandler PropertyChanged;
+        public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged = delegate { };
+        public Predicate<object> canExecute;
+        public Action<object> execute;
+
+        private Dictionary<string, List<string>> _errors = new Dictionary<string, List<string>>();
+
         protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
@@ -31,12 +38,30 @@ namespace DocsPublisher.Program.Core
             if (EqualityComparer<T>.Default.Equals(field, value)) return false;
             field = value;
             NotifyPropertyChanged(propertyName);
+            ValidateProperty(propertyName, value);
             return true;
         }
 
+        private void ValidateProperty<T>(string propertyName, T value)
+        {
+            var results = new List<ValidationResult>();
 
-        public Predicate<object> canExecute;
-        public Action<object> execute;
+            if (results.Any())
+            {
+               // _errors[propertyName] = results.Select(c => c.ErrorContent.ToString).ToList(); 
+            }
+            else
+            {
+                _errors.Remove(propertyName);
+            }
+            ErrorsChanged(this, new DataErrorsChangedEventArgs(propertyName));
+        }
+     
+
+        public bool HasErrors
+        {
+            get { return _errors.Count > 0; }
+        }
 
         public event EventHandler CanExecuteChanged
         {
@@ -59,6 +84,11 @@ namespace DocsPublisher.Program.Core
         {
             if (this.canExecute != null) this.execute(parameter);
             else return;
+        }
+
+        public IEnumerable GetErrors(string propertyName)
+        {
+            return (_errors.ContainsKey(propertyName))? _errors[propertyName]: null;
         }
     }
 }
