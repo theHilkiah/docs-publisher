@@ -52,7 +52,7 @@ namespace DocsPublisher.Program.Core
             }
             else
             {
-                _errors.Remove(propertyName);
+                //_errors?.Remove(propertyName);
             }
             ErrorsChanged(this, new DataErrorsChangedEventArgs(propertyName));
         }

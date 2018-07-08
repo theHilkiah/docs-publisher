@@ -23,6 +23,21 @@ namespace DocsPublisher.Program.App.MainObjects
 {
     class AppsCore : MainCore
     {
+
+        private dynamic _data;
+        public dynamic DATA
+        {
+            get { return _data; }
+            set { SetField(ref _data, value); }
+        }
+
+        private ContentControl _contentUi;
+        public ContentControl ContentUI
+        {
+            get { return _contentUi; }
+            set { SetField(ref _contentUi, value); }
+        }
+
         private string _logTitle;
         public string AppLogTitle
         {
