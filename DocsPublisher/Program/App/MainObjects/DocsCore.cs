@@ -16,7 +16,7 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Xsl;
 
-namespace DocsPublisher.Program.App.CoreObjects
+namespace DocsPublisher.Program.App.MainObjects
 {
     class DocsCore
     {

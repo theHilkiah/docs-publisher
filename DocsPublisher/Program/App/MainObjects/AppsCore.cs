@@ -19,7 +19,7 @@ using System.Xml.Linq;
 using System.Xml.Xsl;
 using WinForms = System.Windows.Forms;
 
-namespace DocsPublisher.Program.App.CoreObjects
+namespace DocsPublisher.Program.App.MainObjects
 {
     class AppsCore : MainCore
     {
