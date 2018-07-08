@@ -19,12 +19,12 @@ using System.Xml.Xsl;
 
 namespace DocsPublisher.Program.Core
 {
-    class MainCore : INotifyPropertyChanged, INotifyDataErrorInfo, ICommand
+    class MainCore : CMDCore, INotifyPropertyChanged, INotifyDataErrorInfo
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged = delegate { };
-        public Predicate<object> canExecute;
-        public Action<object> execute;
+        //public Predicate<object> canExecute;
+        //public Action<object> execute;
 
         private Dictionary<string, List<string>> _errors = new Dictionary<string, List<string>>();
 
@@ -63,19 +63,21 @@ namespace DocsPublisher.Program.Core
             get { return _errors.Count > 0; }
         }
 
+        /*
         public event EventHandler CanExecuteChanged
         {
             add { CommandManager.RequerySuggested += value; }
             remove { CommandManager.RequerySuggested -= value; }
         }
+        */
 
-        public MainCore(Predicate<object> CanExecute = null, Action<object> Execute = null)
+        public MainCore(Predicate<object> CanExecute = null, Action<object> Execute = null) : base(CanExecute, Execute)
         {
-            if (Execute != null) this.execute = Execute;
-            if (CanExecute != null) this.canExecute = CanExecute;
+            //if (Execute != null) this.execute = Execute;
+            //if (CanExecute != null) this.canExecute = CanExecute;
         }
 
-        public bool CanExecute(object parameter)
+        /*public bool CanExecute(object parameter)
         {
             return this.canExecute == null ? true : this.canExecute(parameter);
         }
@@ -85,7 +87,7 @@ namespace DocsPublisher.Program.Core
             if (this.canExecute != null) this.execute(parameter);
             else return;
         }
-
+        */
         public IEnumerable GetErrors(string propertyName)
         {
             return (_errors.ContainsKey(propertyName))? _errors[propertyName]: null;

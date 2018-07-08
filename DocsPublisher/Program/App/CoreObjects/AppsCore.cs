@@ -1,4 +1,5 @@
-﻿using Sgml;
+﻿using DocsPublisher.Program.Core;
+using Sgml;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ using System.Xml.Linq;
 using System.Xml.Xsl;
 using WinForms = System.Windows.Forms;
 
-namespace DocsPublisher.Program.Core
+namespace DocsPublisher.Program.App.CoreObjects
 {
     class AppsCore : MainCore
     {
