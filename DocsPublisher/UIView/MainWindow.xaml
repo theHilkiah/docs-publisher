@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DocsPublisher.UIView"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="550" Width="525">
     <Grid>
         <StackPanel>
-            <ContentControl Content="{Binding UI, Mode=TwoWay}" />
+            <ContentControl Height="500" Content="{Binding UI, Mode=TwoWay}" />
             <Button Command="{Binding RunApp}">CLICK ME</Button>
         </StackPanel>
 

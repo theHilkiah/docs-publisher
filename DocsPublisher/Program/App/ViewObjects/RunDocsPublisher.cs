@@ -10,7 +10,7 @@ using System.Windows.Input;
 
 namespace DocsPublisher.Program.App.ViewObjects
 {
-    class DocsCollection: ViewObject
+    class RunDocsPublisher: ViewObject
     {
         public dynamic Data { get; }
         public dynamic CMD { get; }
@@ -32,9 +32,10 @@ namespace DocsPublisher.Program.App.ViewObjects
         private void doRunApp(object param)
         {
             //throw new NotImplementedException();
+            
         }
 
-        public DocsCollection()
+        public RunDocsPublisher()
         {
             this.UI = new DocsCollectorUI();
         }

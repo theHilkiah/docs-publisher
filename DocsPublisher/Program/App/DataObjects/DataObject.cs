@@ -30,12 +30,12 @@ namespace DocsPublisher.Program.App.DataObjects
             set { SetField(ref _data, value); }
         }
 
-        private ContentControl _ui;
-        public ContentControl UI
-        {
-            get { return _ui; }
-            set { SetField(ref _ui, value); }
-        }
+        //private ContentControl _ui;
+        //public ContentControl UI
+        //{
+        //    get { return _ui; }
+        //    set { SetField(ref _ui, value); }
+        //}
 
         private string _logTitle;
         public string AppLogTitle

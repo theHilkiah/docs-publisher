@@ -25,7 +25,7 @@ namespace DocsPublisher.UIView
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new DocsCollection();
+            this.DataContext = new RunDocsPublisher();
         }
     }
 }
