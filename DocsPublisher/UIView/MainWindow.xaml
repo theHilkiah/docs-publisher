@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <ContentControl Content="{Binding ContentUI, Mode=TwoWay}" />
+        <StackPanel>
+            <ContentControl Content="{Binding UI, Mode=TwoWay}" />
+            <Button Command="{Binding RunApp}">CLICK ME</Button>
+        </StackPanel>
+
     </Grid>
 </Window>

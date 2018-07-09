@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace DocsPublisher.Program.Core
 {
-    class CMDCore : ICommand
+    abstract class CMDCore : ICommand
     {
         public Predicate<object> canExecute;
         public Action<object> execute;

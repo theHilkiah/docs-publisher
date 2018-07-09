@@ -17,11 +17,10 @@ using System.Windows.Input;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Xsl;
-using WinForms = System.Windows.Forms;
 
-namespace DocsPublisher.Program.App.MainObjects
+namespace DocsPublisher.Program.App.DataObjects
 {
-    class AppsCore : MainCore
+    class DataObject : DataCore
     {
 
         private dynamic _data;
@@ -31,11 +30,11 @@ namespace DocsPublisher.Program.App.MainObjects
             set { SetField(ref _data, value); }
         }
 
-        private ContentControl _contentUi;
-        public ContentControl ContentUI
+        private ContentControl _ui;
+        public ContentControl UI
         {
-            get { return _contentUi; }
-            set { SetField(ref _contentUi, value); }
+            get { return _ui; }
+            set { SetField(ref _ui, value); }
         }
 
         private string _logTitle;
@@ -60,41 +59,7 @@ namespace DocsPublisher.Program.App.MainObjects
             set { SetField(ref _progress, value); }
         }
 
-        private ICommand _goPrev;
-        public ICommand GoPrev
-        {
-            get { return _goPrev ?? (_goPrev = new MainCore(p => CanGoPrev(p), p => GoPrevAction(p))); }
-        }
 
-        public virtual void GoPrevAction(object param) { return; }
-
-        public virtual bool CanGoPrev(object param) { return false; }
-
-        private ICommand _goNext;
-        public ICommand GoNext
-        {
-            get { return _goNext ?? (_goNext = new MainCore(p => CanGoNext(p), p => GoNextAction(p))); }
-        }
-
-        public virtual void GoNextAction(object param) { return; }
-
-        public virtual bool CanGoNext(object param) { return false; }
-
-        private ICommand _browseFolder;
-
-        public ICommand BrowseFolder
-        {
-            get { return _browseFolder ?? (_browseFolder = new MainCore(p => true, p => BrowseFolderAction(p))); ; }
-        }
-
-        private void BrowseFolderAction(dynamic param)
-        {
-            WinForms.FolderBrowserDialog FolderBrowser = new WinForms.FolderBrowserDialog();
-
-            if (param is TextBox) FolderBrowser.SelectedPath = (param as TextBox).Text;
-            if (FolderBrowser.ShowDialog() != WinForms.DialogResult.OK) return;
-            if (param is TextBox) (param as TextBox).Text = FolderBrowser.SelectedPath;
-        }
 
         public void AddLogTitle(string logTitle)
         {

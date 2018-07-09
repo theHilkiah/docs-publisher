@@ -16,9 +16,9 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Xsl;
 
-namespace DocsPublisher.Program.App.MainObjects
+namespace DocsPublisher.Program.Libs
 {
-    class DocsCore
+    class XDocsBase
     {
 
         XmlReaderSettings xmlReaderSettings = new XmlReaderSettings

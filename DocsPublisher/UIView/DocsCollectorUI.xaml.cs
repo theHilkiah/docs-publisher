@@ -1,5 +1,4 @@
 ﻿using DocsPublisher.Program.App.DataObjects;
-using DocsPublisher.Program.App.ViewObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,11 +17,11 @@ using System.Windows.Shapes;
 namespace DocsPublisher.UIView
 {
     /// <summary>
-    /// Interaction logic for DocsCollector.xaml
+    /// Interaction logic for DocsCollectorUI.xaml
     /// </summary>
-    public partial class DocsCollector : UserControl
+    public partial class DocsCollectorUI : UserControl
     {
-        public DocsCollector()
+        public DocsCollectorUI()
         {
             InitializeComponent();
             this.DataContext = new DocsCollected();

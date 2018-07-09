@@ -10,7 +10,7 @@ using System.Windows;
 
 namespace DocsPublisher.Program.Core
 {
-    class DBCore
+    abstract class DBACore
     {
         private static SqlConnection _sqlConn;
 
@@ -23,7 +23,7 @@ namespace DocsPublisher.Program.Core
 
         SqlCommand dbCommand;
 
-        public DBCore(string serverName)
+        public DBACore(string serverName)
         {
             if (SQLConn != null) SQLConn = null;
 

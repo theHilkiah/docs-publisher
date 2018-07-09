@@ -1,5 +1,4 @@
 ﻿using DocsPublisher.Program.App.DataObjects;
-using DocsPublisher.Program.App.MainObjects;
 using DocsPublisher.Program.App.ViewObjects;
 using System;
 using System.Collections.Generic;
@@ -26,7 +25,7 @@ namespace DocsPublisher.UIView
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new CollectDocs();
+            this.DataContext = new DocsCollection();
         }
     }
 }
