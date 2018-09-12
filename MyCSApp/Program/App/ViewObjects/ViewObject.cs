@@ -1,4 +1,4 @@
-﻿using DocsPublisher.Program.Core;
+﻿using MyCSApp.Program.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using WinForms = System.Windows.Forms;
 
-namespace DocsPublisher.Program.App.ViewObjects
+namespace MyCSApp.Program.App.ViewObjects
 {
     class ViewObject : CMDCore
     {

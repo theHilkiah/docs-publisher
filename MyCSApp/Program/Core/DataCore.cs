@@ -17,7 +17,7 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Xsl;
 
-namespace DocsPublisher.Program.Core
+namespace MyCSApp.Program.Core
 {
     abstract class DataCore : INotifyPropertyChanged, INotifyDataErrorInfo
     {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DocsPublisher.Program.App.DataObjects
+namespace MyCSApp.Program.App.DataObjects
 {
-    class DocsCollected: DataObject
+    class AppStarted: DataObject
     {
         private dynamic _inputDoc;
         public dynamic InputDoc
@@ -29,7 +29,7 @@ namespace DocsPublisher.Program.App.DataObjects
             set { SetField(ref _outputDoc, value); }
         }
 
-        public DocsCollected()
+        public AppStarted()
         {
 
         }

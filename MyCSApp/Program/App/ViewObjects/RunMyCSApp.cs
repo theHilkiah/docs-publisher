@@ -1,5 +1,5 @@
-﻿using DocsPublisher.Program.App.DataObjects;
-using DocsPublisher.UIView;
+﻿using MyCSApp.Program.App.DataObjects;
+using MyCSApp.UIView;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace DocsPublisher.Program.App.ViewObjects
+namespace MyCSApp.Program.App.ViewObjects
 {
-    class RunDocsPublisher: ViewObject
+    class RunMyCSApp: ViewObject
     {
         public dynamic Data { get; }
         public dynamic CMD { get; }
@@ -35,9 +35,9 @@ namespace DocsPublisher.Program.App.ViewObjects
             
         }
 
-        public RunDocsPublisher()
+        public RunMyCSApp()
         {
-            this.UI = new DocsCollectorUI();
+            this.UI = new AppStarterUI();
         }
     }
 }

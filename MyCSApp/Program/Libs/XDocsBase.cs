@@ -16,7 +16,7 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Xsl;
 
-namespace DocsPublisher.Program.Libs
+namespace MyCSApp.Program.Libs
 {
     class XDocsBase
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace DocsPublisher.Program.Core
+namespace MyCSApp.Program.Core
 {
     abstract class DBACore
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace DocsPublisher.Program.Core
+namespace MyCSApp.Program.Core
 {
     abstract class CMDCore : ICommand
     {

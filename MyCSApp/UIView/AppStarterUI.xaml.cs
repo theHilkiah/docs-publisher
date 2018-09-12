@@ -1,5 +1,4 @@
-﻿using DocsPublisher.Program.App.DataObjects;
-using DocsPublisher.Program.App.ViewObjects;
+﻿using MyCSApp.Program.App.DataObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,17 +14,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DocsPublisher.UIView
+namespace MyCSApp.UIView
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AppStarterUI.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AppStarterUI : UserControl
     {
-        public MainWindow()
+        public AppStarterUI()
         {
             InitializeComponent();
-            this.DataContext = new RunDocsPublisher();
+            this.DataContext = new AppStarted();
         }
     }
 }

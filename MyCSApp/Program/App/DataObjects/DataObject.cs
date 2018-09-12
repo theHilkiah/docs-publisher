@@ -1,4 +1,4 @@
-﻿using DocsPublisher.Program.Core;
+﻿using MyCSApp.Program.Core;
 using Sgml;
 using System;
 using System.Collections;
@@ -18,7 +18,7 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Xsl;
 
-namespace DocsPublisher.Program.App.DataObjects
+namespace MyCSApp.Program.App.DataObjects
 {
     class DataObject : DataCore
     {

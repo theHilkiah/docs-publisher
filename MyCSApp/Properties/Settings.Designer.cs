@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DocsPublisher.Properties
+namespace MyCSApp.Properties
 {
 
 
